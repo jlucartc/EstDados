@@ -75,7 +75,7 @@ public class Agenda implements Iterable<Aluno>, Serializable{
 			}
 		}
 		else{
-			JOptionPane.showMessageDialog(null,"Procedimento inv·lido.");
+			JOptionPane.showMessageDialog(null,"Procedimento inv√°lido.");
 		}
 	}
 	public void setNome(Aluno a){
@@ -91,20 +91,20 @@ public class Agenda implements Iterable<Aluno>, Serializable{
 				}
 				else{
 					a.nome = null;
-					JOptionPane.showMessageDialog(null,"1 - Cadastro Inv·lido.");
+					JOptionPane.showMessageDialog(null,"1 - Cadastro Inv√°lido.");
 					return;
 				}
 			}
 			if(a.nome.length() == space){
 				a.nome = null;
-				JOptionPane.showMessageDialog(null,"2 - Cadastro Inv·lido.");
+				JOptionPane.showMessageDialog(null,"2 - Cadastro Inv√°lido.");
 			}
 		}
 		System.out.println("\n\n");
 	}
 	public void setMatricula(Aluno a){
 		try{
-			a.matricula = JOptionPane.showInputDialog("Digite a matrÌcula do aluno: ");
+			a.matricula = JOptionPane.showInputDialog("Digite a matr√≠cula do aluno: ");
 		} catch(NullPointerException ex){
 		}
 		boolean isdigit = false;
@@ -118,7 +118,7 @@ public class Agenda implements Iterable<Aluno>, Serializable{
 		if(isdigit){
 		}
 		else{
-			JOptionPane.showMessageDialog(null,"Procedimento inv·lido.");
+			JOptionPane.showMessageDialog(null,"Procedimento inv√°lido.");
 			a.matricula = null;
 		}
 
@@ -126,8 +126,7 @@ public class Agenda implements Iterable<Aluno>, Serializable{
 	}
 	public void setEstado(Aluno a){
 		try{
-			//int i = Integer.parseInt(JOptionPane.showInputDialog("Digite o estado do aluno: "+"\n"+"0 - n„o est· cursando"+"\n"+"1 - est· cursando"+"\n\n"));
-			String i = JOptionPane.showInputDialog("Digite o estado do aluno: "+"\n"+"0 - n„o est· cursando"+"\n"+"1 - est· cursando"+"\n\n");
+			String i = JOptionPane.showInputDialog("Digite o estado do aluno: "+"\n"+"0 - n√£o est√° cursando"+"\n"+"1 - est√° cursando"+"\n\n");
 			System.out.println("\n\n");
 			if(i.length() == 1){
 				if(i.equals("0")){
@@ -138,17 +137,17 @@ public class Agenda implements Iterable<Aluno>, Serializable{
 				}
 				else{
 					a.cursando = null;
-					JOptionPane.showMessageDialog(null,"Cadastro inv·lido.");
+					JOptionPane.showMessageDialog(null,"Cadastro inv√°lido.");
 				}
 			}
 			else{
 				a.cursando = null;
-				JOptionPane.showMessageDialog(null,"Cadastro inv·lido.");
+				JOptionPane.showMessageDialog(null,"Cadastro inv√°lido.");
 			}
 		}catch(NumberFormatException ex){
 		}catch(NullPointerException ex){
 			a.cursando = null;
-			JOptionPane.showMessageDialog(null,"Cadastro inv·lido.");
+			JOptionPane.showMessageDialog(null,"Cadastro inv√°lido.");
 		}
 
 	}
