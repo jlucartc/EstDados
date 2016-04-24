@@ -26,7 +26,7 @@ public class Aluno implements Serializable{
 				return s;
 			}
 			else if(Character.valueOf(this.cursando.charAt(0)) == 1){
-				String s = "\n\n"+"Nome: "+this.nome+"\n"+"Matricula: "+this.matricula+"\n"+"Estado: n„o est· cursando "+"\n\n";
+				String s = "\n\n"+"Nome: "+this.nome+"\n"+"Matricula: "+this.matricula+"\n"+"Estado: n√£o est√° cursando "+"\n\n";
 				return s;
 			}
 			else{
@@ -60,7 +60,7 @@ public class Aluno implements Serializable{
 				return "cursando";
 			}
 			else if(this.cursando.equals("0")){
-				return "n„o est· cursando";
+				return "n√£o est√° cursando";
 			}
 			else{
 				return "indefinido";
