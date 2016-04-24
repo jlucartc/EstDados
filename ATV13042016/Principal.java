@@ -22,7 +22,7 @@ public static Agenda agenda = new Agenda();
 			main(null);
 			break;
 		case 3:
-			String string1 = JOptionPane.showInputDialog("Digite a matrícula do aluno: \n");
+			String string1 = JOptionPane.showInputDialog("Digite a matrÃ­cula do aluno: \n");
 			Aluno aluno1 = agenda.procurar(string1);
 			if(aluno1 != null){
 				int escolha2 = Integer.parseInt(JOptionPane.showInputDialog("\n\n 1 - Alterar nome do aluno \n 2 - Alterar matricula do aluno \n 3 - Alterar estado do aluno \n 4 - Alterar tudo \n\n"));
@@ -31,7 +31,7 @@ public static Agenda agenda = new Agenda();
 			main(null);
 			break;
 		case 4:
-			String string2 = JOptionPane.showInputDialog("Digite a matrícula do aluno: \n");
+			String string2 = JOptionPane.showInputDialog("Digite a matrÃ­cula do aluno: \n");
 			Aluno aluno2 = agenda.procurar(string2);
 			agenda.remove(aluno2);
 			main(null);
